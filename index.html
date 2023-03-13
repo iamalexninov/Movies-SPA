@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/forms.css">
     <title>Movies</title>
 </head>
+
 <body>
-    
+    <header>
+        <nav class="nav-bar">
+            <img class="nav-logo" src="/assets/logo.png" alt="Logo image">
+            <div id="guest">
+                <a href="/login">Login</a>
+                <a href="/register">Register</a>
+            </div>
+            <div id="user">
+                <span class="user-welcome">Welcome, Alex</span>
+                <a href="/logout"></a>
+                <a href="/create">Create</a>
+                <a href="/myMovies">My Movies</a>
+            </div>
+
+        </nav>
+    </header>
+    <!-- <h2>Movies</h2> -->
+    <div id="root">
+        <!-- <section id="home-section">
+
+        </section> -->
+        <!-- Login Section -->
+        <section id="login-section">
+            <div class="form">
+                <form class="login-form">
+                    <h3>Login Form</h3>
+                    <input type="text" placeholder="Write an email...">
+                    <input type="password" placeholder="Write a password...">
+                    <button type="submit">Log In</button>
+                </form>
+            </div>
+        </section>
+        <!-- Register Section -->
+        <section id="register-section">
+            <div class="form">
+                <form class="register-form">
+                    <h3>Register Form</h3>
+                    <input type="text" placeholder="Write an email...">
+                    <input type="text" placeholder="Write a name...">
+                    <input type="password" placeholder="Write a password...">
+                    <input type="password" placeholder="Repeat a password...">
+                    <button type="submit">Sign In</button>
+                </form>
+            </div>
+        </section>
+        <!-- Create Section -->
+        <section id="create-section">
+            <div class="form">
+                <form class="create-form">
+                    <h3>Create a Movie</h3>
+                    <input type="text" placeholder="Write a title...">
+                    <input type="text" placeholder="Write a type of the movie...">
+                    <input type="text" placeholder="Place image link...">
+                    <textarea placeholder="Resume the movie..."></textarea>
+                    <input type="text" placeholder="Main Actors...">
+                    <button type="submit">Create</button>
+                </form>
+            </div>
+        </section>
+    </div>
 </body>
+
 </html>
